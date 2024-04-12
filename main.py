@@ -9,7 +9,7 @@ def refresh_window():
          tree.delete(i)
     root.update()
     #tree.delete()
-    con1 = sqlite3.connect("\\\\srv\\NEW\\script\\baza.db")
+    con1 = sqlite3.connect("\\\\path\\path\\path\\baza.db")
     cur1 = con1.cursor()
     cur1.execute("SELECT * FROM patients  ORDER BY time")
     rows = cur1.fetchall()    
@@ -21,7 +21,7 @@ def refresh_window():
 
 
 def View():
-    con1 = sqlite3.connect("\\\\srv\\NEW\\script\\baza.db")
+    con1 = sqlite3.connect("\\\\path\\path\\path\\baza.db")
     cur1 = con1.cursor()
     cur1.execute("SELECT * FROM patients ORDER BY time")
     rows = cur1.fetchall()    
